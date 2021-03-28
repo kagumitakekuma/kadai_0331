@@ -1,0 +1,19 @@
+body {
+  background-color: pink;
+  /* font-family: "游明朝"; */
+}
+
+.header {
+  text-align: center;
+  background-color: coral;
+}
+
+.footer {
+  text-align: center;
+  background-color: coral;
+}
+
+table {
+  display: flex;
+  height: 500px;
+}
