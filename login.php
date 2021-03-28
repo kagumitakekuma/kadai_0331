@@ -15,7 +15,7 @@
      <p>ユーザーIDとパスワードを入力してログインしてください。</p>
     <legend>ログイン</legend>
      <label>ユーザーID：<input type="text" name="lid"></label><br>
-     <label>パスワード：<input type="text" name="lpw"></label><br>
+     <label>パスワード：<input type="password" name="lpw"></label><br>
      <input type="submit" value="ログイン"　class="login">
     </fieldset>
   </div>
@@ -32,7 +32,7 @@
   </div>
 </form>
 
-
+<p><a href="admin_select.php">管理者ページはこちら</a></p>
 
 <footer class="footer">OKAIMONO</footer>
 

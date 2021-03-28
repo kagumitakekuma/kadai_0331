@@ -16,7 +16,7 @@ function loginCheck(){
 //DB呼び出し
 function dbConnect(){
 try {
-$pdo = new PDO('mysql:dbname=shopping_db;charset=utf8;host=localhost','root','');
+$pdo = new PDO('mysql:dbname=shop_db;charset=utf8;host=localhost','root','');
 } catch (PDOException $e) {
   exit('データベースに接続できませんでした。'.$e->getMessage());
 }

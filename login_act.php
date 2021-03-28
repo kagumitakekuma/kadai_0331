@@ -6,7 +6,7 @@ $lpw=$_POST["lpw"];
 
 $pdo=dbConnect();
 
-$sql= "SELECT *FROM user_table WHERE userid=:lid AND userpw=:lpw" ;
+$sql= "SELECT *FROM users_table WHERE userid=:lid AND userpw=:lpw" ;
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':lid', $lid); 
 $stmt->bindValue(':lpw', $lpw); 
@@ -30,4 +30,31 @@ if( $val["id"]  != ""){
 }
 exit();
 
+session_start();
+//エラー項目の確認
+if($_POST["username"] == ""){
+$error["username"] ="blank";
+}
+if($_POST["lid"] == ""){
+$error["lid"] ="blank";
+}
+if($_POST["lpw"] <4){
+$error["lpw"] ="length";
+}
+if($_POST["lpw"] == ""){
+$error["lpw"] ="blank";
+
+}
+if(empty($error)){
+  $_SESSION["join"]=$_POST;
+  header("Location: insert1/check.php");
+  exit;
+}
+
+
+
+
+
 ?>
+
+

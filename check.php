@@ -21,7 +21,7 @@ $lpw= $_POST["lpw"];
 $pdo=dbConnect();
 //３．データ登録SQL作成 //ここにカラム名を入力する
 //xxx_table(テーブル名)はテーブル名を入力します
-$stmt = $pdo->prepare("INSERT INTO user_table(id, username, userid, userpw, indate )VALUES
+$stmt = $pdo->prepare("INSERT INTO users_table(id, username, userid, userpw, indate )VALUES
 (NULL, :username, :userid, :userpw, sysdate())");
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':userid', $lid, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
