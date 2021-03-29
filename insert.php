@@ -70,7 +70,7 @@ if ($status==false) {
 <th><input type="hidden" name="itemname" value="<?=$itemname?>"> <?=$itemname?> </th>
 <th><input type="hidden" name="itemcost" value="<?=$itemcost?>"> <?=$itemcost?> </th>
 <th><input type="hidden" name="quantity"value="<?=$quantity?>"> <?=$quantity?></th>
-<th><input type="submit" value="しちゃう"　class="order1"></th>
+<th><input type="submit" value="しちゃう"　class="button"></th>
 </tr>
 </form>
 <?php

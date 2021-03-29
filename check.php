@@ -9,7 +9,6 @@ if(
 }
 // 1. POSTデータ取得
 // まず前のphpからデーターを受け取る（この受け取ったデータをもとにbindValueと結びつけるため）
-
 $username = $_POST["username"];
 $lid= $_POST["lid"];
 $lpw= $_POST["lpw"];
@@ -42,30 +41,22 @@ if ($res==false) {
 //     exit;
 // }
 
-
-
-
-
-// session_start();
-// //エラー項目の確認
-// if($_POST["username"] == ""){
-// $error["username"] ="blank";
-// }
-// if($_POST["lid"] == ""){
-// $error["lid"] ="blank";
-// }
-// if($_POST["lpw"] <4){
-// $error["lpw"] ="length";
-// }
-// if($_POST["lpw"] == ""){
-// $error["lpw"] ="blank";
-
-// }
-// if(empty($error)){
-//   $_SESSION["join"]=$_POST;
-//   header("Location: check.php");
-//   exit;
-// }
+session_start();
+//エラー項目の確認（バリデーション）
+if($_POST["username"] == ""){
+$error["username"] ="blank";
+}
+if($_POST["lid"] == ""){
+$error["lid"] ="blank";
+}
+if($_POST["lpw"] <4){
+$error["lpw"] ="length";
+}
+if(empty($error)){
+  $_SESSION["join"]=$_POST;
+  header("Location: check.php");
+  exit;
+}
 ?>
 
 
@@ -81,13 +72,13 @@ if ($res==false) {
 
 <form method="POST" action="complete.php" class="form">
 <dl>
-<dt>ご氏名</dt>
+<dt>・ご氏名</dt>
 <dt><?=$username?></dt>
-<dt>ユーザーID</dt>
+<dt>・ユーザーID</dt>
 <dt><?=$lid?></dt>
-<dt>パスワード</dt>
+<dt>・パスワード</dt>
 <dt>【表示されません】</dt>
-<dt><input type="submit" value="これでOK"></dt>
+<dt><input type="submit" value="これでOK" class="button"></dt>
 
 </form>
 </table>

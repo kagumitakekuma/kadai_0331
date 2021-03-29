@@ -42,6 +42,7 @@ while($result=$stmt->fetch(PDO::FETCH_ASSOC)){
 <body>
 
 <header class="header">注意※※管理者専用画面です</header>
+ログイン画面に戻る
 <p><a href="admin.php">商品追加はこちら</a></p>
 <p>商品詳細の更新は以下のリンクよりお願い致します。</p>
 

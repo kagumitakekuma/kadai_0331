@@ -17,8 +17,8 @@
     <legend>新規登録</legend>
      <label>お名前：<input type="text" name="username"></label><br>
      <label>ユーザーID：<input type="text" name="lid"></label><br>
-     <label>パスワード：<input type="text" name="lpw"></label><br>
-     <input type="submit" value="入力内容を確認する" class="touroku">
+     <label>パスワード：<input type="text" name="lpw"　pattern="(^[0-9A-Za-z]+$>)"</label><br>
+     <input type="submit" value="入力内容を確認する" class="button">
     </fieldset>
   </div>
 </form>

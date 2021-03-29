@@ -43,7 +43,6 @@ $status=$stmt->execute();
 <th>カートに入れる</th>
 </tr>
 
-
 <?php
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 ?>
@@ -58,7 +57,7 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 <option value=1>1</option>
 </th>
 
-<th><input type="submit" value="追加"></th>
+<th><input type="submit" value="追加" class="button"></th>
 </tr>
 </form>
 <?php

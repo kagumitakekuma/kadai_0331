@@ -8,7 +8,6 @@
 <body>
 <header class="header">okaimono</header>
 
-
 <form method="post" action="login_act.php">
   <div class="box">
    <fieldset>
@@ -16,18 +15,17 @@
     <legend>ログイン</legend>
      <label>ユーザーID：<input type="text" name="lid"></label><br>
      <label>パスワード：<input type="password" name="lpw"></label><br>
-     <input type="submit" value="ログイン"　class="login">
+     <input type="submit" value="ログイン"　class="button">
     </fieldset>
   </div>
 </form>
-
 
 <form method="post" action="regist.php">
   <div class="box">
    <fieldset>
          <p>会員登録がまだの方はこちらへ</p>
 
-     <input type="submit" value="会員登録へ" class="touroku">
+     <input type="submit" value="会員登録へ" class="button">
     </fieldset>
   </div>
 </form>

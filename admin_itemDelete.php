@@ -40,7 +40,7 @@ exit;
 <label>価格：<input type="text" name="itemcost" value="<?=$row["itemcost"]?>"></label><br>
 <label>説明：<input type="text" name="explanation" value="<?=$row["explanation"]?>"></label><br>
 <input type="hidden" name="id" value="<?=$row["id"]?>">
-<input type="submit" value="更新">
+<input type="submit" value="更新" class="button1">
 </fieldset>
 
 </form>

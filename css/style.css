@@ -1,6 +1,5 @@
 body {
-  background-color: pink;
-  /* font-family: "游明朝"; */
+  background-color: #ffffaa;
 }
 
 .header {
@@ -16,4 +15,17 @@ body {
 table {
   display: flex;
   height: 500px;
+}
+
+input.button {
+  border-bottom: 5px solid #9f000c;
+  background-color: hotpink;
+}
+input.button:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #9f000c;
+}
+
+input.button {
+  border-radius: 100vh;
 }

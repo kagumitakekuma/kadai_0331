@@ -16,17 +16,18 @@
 
 <form method="POST" action="admin_itemInsert.php" class="">
 <div class="itemInsert">
-<p>商品コード</p>
+<p>◆商品コード</p>
 <label for=""><input type="text" name="itemid"></label>
-<p>商品名</p>
-<label for=""><input type="text" name="itemname"></label>
-<p>価格</p>
+<p>◆商品名</p>
+<label for=""><input type="text" name="itemname" size="40" maxlength="20"></label>
+<p>◆価格</p>
 <label for=""><input type="text" name="itemcost"></label>
-<p>説明</p>
-<label for=""><input type="text" name="explanation"></label>
+<p>◆説明</p>
+<textarea name="explanation" rows="4" cols="40"></textarea>
+
 </div>
 
-<div><input type="submit" value="追加登録"></div>
+<div><input type="submit" value="追加登録" class="button1"></div>
 
 </form>
 

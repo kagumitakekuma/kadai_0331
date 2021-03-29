@@ -1,5 +1,5 @@
 <?php
-
+include("function.php");
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
@@ -10,11 +10,7 @@ $itemcost= $_POST["itemcost"];
 $quantity = $_POST["quantity"];
 
 
-try {
-$pdo = new PDO('mysql:dbname=shopping_db;charset=utf8;host=localhost','root','');
-} catch (PDOException $e) {
-  exit('データベースに接続できませんでした。'.$e->getMessage());
-}
+$pdo=dbConnect();
 
 //２．データ登録SQL作成
 //作ったテーブル名を書く場所  xxxにテーブル名を入れます
@@ -33,14 +29,13 @@ if($status==false){
     $view .= $result["itemid"].":".$result["itemname"].",".$result["itemcost"].",".$result["quantity"];
     $view .= "</p>";
   }
-
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>一発ギャグ購入処</title>
+<title>◆OKAIMONO◆</title>
 <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -49,12 +44,14 @@ if($status==false){
 <a class="logout" href="logout.php">ログアウト</a>
 </header>
 <h2>カートの中身</h2>
+
 <table border="1" >
 <tr class="item">
 <th>商品コード</th>
 <th>商品名</th>
 <th>価格</th>
 <th>数量</th>
+<th>合計金額</th>
 <th class="order2">本当にいいの？</th>
 </tr>
 <form method="POST" action="order.php" class="form">
@@ -63,8 +60,8 @@ if($status==false){
 <th> <?=$itemname?></th>
 <th> <?=$itemcost?></th>
 <th> <?=$quantity?></th>
-
-<th><input type="submit" value="いいよ！！！" class="order3"></th>
+<th> <?=$quantity*$itemcost?>円</th>
+<th><input type="submit" value="いいよ！！！" class="button"></th>
 </tr>
 </form>
 <?php
@@ -79,8 +76,6 @@ $pdo=null;
 
 </body>
 </html>
-
-
-<footer class="footer">OWARAIOWARAIOWARIOWARAI</footer>
+<footer class="footer">OKAIMONO</footer>
 </body>
 </html> 
