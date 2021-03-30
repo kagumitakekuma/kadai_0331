@@ -65,7 +65,7 @@ if(empty($error)){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>おかいもの</title>
+  <title>◆OKAIMONO◆</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -85,7 +85,7 @@ if(empty($error)){
 
     <div><a class="" href="regist.php">やりなおし</a></div>
     </div>
-<footer class="footer">◆おかいもの◆</footer>
+<footer class="footer">OWARAIOWARAIOWARAI</footer>
 
 </body>
 </html>

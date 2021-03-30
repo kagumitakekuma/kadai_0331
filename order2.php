@@ -82,6 +82,6 @@ $pdo=null;
 
 </body>
 </html>
-<footer class="footer">OKAIMONO</footer>
+<footer class="footer">OWARAIOWARAIOWARAI</footer>
 </body>
 </html> 

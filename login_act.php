@@ -21,6 +21,7 @@ exit("QueryError:".$error[2]);
 //抽出データ数取得(1レコードだけを抽出)
 $val= $stmt->fetch();
 
+
 if( $val["id"]  != ""){
     $_SESSION["chk_ssid"] =session_id();
     $_SESSION["username"] =$val["username"];
@@ -47,7 +48,7 @@ $error["lpw"] ="blank";
 }
 if(empty($error)){
   $_SESSION["join"]=$_POST;
-  header("Location: insert1/check.php");
+  header("Location: check.php");
   exit;
 }
 

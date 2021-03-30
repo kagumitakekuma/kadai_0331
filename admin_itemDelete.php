@@ -29,7 +29,7 @@ exit;
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>おかいもの</title>
+  <title>削除</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>

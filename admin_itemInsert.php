@@ -13,16 +13,16 @@ $itemid = $_POST["itemid"];
 $itemname = $_POST["itemname"];
 $itemcost= $_POST["itemcost"];
 $explanation = $_POST["explanation"];
-
+// echo($itemid );
 // echo ("$itemid,$itemname,$itemcost,$explanation");
 
 
 //DB接続
 $pdo=dbConnect();
 
-$stmt = $pdo->prepare("INSERT INTO items_table(id,itemid, itemname, itemcost, explanation,
+$stmt = $pdo->prepare("INSERT INTO items_table(id, itemid, itemname, itemcost, explanation,
 indate )VALUES(NULL, :itemid, :itemname, :itemcost, :explanation, sysdate())");
-$stmt->bindValue(':itemid', $itemid, PDO::PARAM_INT);  //Integer（数値の場合 PDO::PARAM_INT)
+$stmt->bindValue(':itemid', $itemid,     PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':itemname', $itemname, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':itemcost', $itemcost, PDO::PARAM_INT);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':explanation', $explanation, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)

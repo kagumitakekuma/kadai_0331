@@ -36,13 +36,13 @@ while($result=$stmt->fetch(PDO::FETCH_ASSOC)){
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>おかいもの</title>
+  <title>登録商品一覧</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">注意※※管理者専用画面です</header>
-ログイン画面に戻る
+<p><a href="login.php">ログイン画面に戻る</a></p>
 <p><a href="admin.php">商品追加はこちら</a></p>
 <p>商品詳細の更新は以下のリンクよりお願い致します。</p>
 

@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>おかいもの</title>
+  <title>◆OKAIMONO◆</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +15,7 @@
     <legend>ログイン</legend>
      <label>ユーザーID：<input type="text" name="lid"></label><br>
      <label>パスワード：<input type="password" name="lpw"></label><br>
-     <input type="submit" value="ログイン"　class="button">
+     <input type="submit" value="ログイン" class="button">
     </fieldset>
   </div>
 </form>
@@ -32,7 +32,7 @@
 
 <p><a href="admin_select.php">管理者ページはこちら</a></p>
 
-<footer class="footer">OKAIMONO</footer>
+<footer class="footer">OWARAIOWARAIOWARAI</footer>
 
  <!-- jQueryを読み込む！必ず先に！
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

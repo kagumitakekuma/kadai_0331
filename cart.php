@@ -9,7 +9,6 @@ $itemname = $_POST["itemname"];
 $itemcost= $_POST["itemcost"];
 $quantity = $_POST["quantity"];
 
-
 $pdo=dbConnect();
 
 //２．データ登録SQL作成
@@ -26,7 +25,7 @@ if($status==false){
 }else{
    $result = $stmt->fetch();
     $view .= "<p>カートの中身を表示</P>";
-    $view .= $result["itemid"].":".$result["itemname"].",".$result["itemcost"].",".$result["quantity"];
+    $view .= $result["itemid"].":".$result["itemname"].",".$result["itemcost"].",".$result["quantity"].",".$result["quantity"]*$result["itemcost"];
     $view .= "</p>";
   }
 ?>
@@ -49,9 +48,9 @@ if($status==false){
 <tr class="item">
 <th>商品コード</th>
 <th>商品名</th>
-<th>価格</th>
+<th>単価（円）</th>
 <th>数量</th>
-<th>合計金額</th>
+<!-- <th>合計金額</th> -->
 <th class="order2">本当にいいの？</th>
 </tr>
 <form method="POST" action="order.php" class="form">
@@ -60,7 +59,6 @@ if($status==false){
 <th> <?=$itemname?></th>
 <th> <?=$itemcost?></th>
 <th> <?=$quantity?></th>
-<th> <?=$quantity*$itemcost?>円</th>
 <th><input type="submit" value="いいよ！！！" class="button"></th>
 </tr>
 </form>
@@ -76,6 +74,6 @@ $pdo=null;
 
 </body>
 </html>
-<footer class="footer">OKAIMONO</footer>
+<footer class="footer">OWARAIOWARAIOWARAI</footer>
 </body>
 </html> 

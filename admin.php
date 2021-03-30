@@ -4,7 +4,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>商品登録画面</title>
+  <title>管理者画面</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +20,7 @@
 <label for=""><input type="text" name="itemid"></label>
 <p>◆商品名</p>
 <label for=""><input type="text" name="itemname" size="40" maxlength="20"></label>
-<p>◆価格</p>
+<p>◆単価（円）</p>
 <label for=""><input type="text" name="itemcost"></label>
 <p>◆説明</p>
 <textarea name="explanation" rows="4" cols="40"></textarea>

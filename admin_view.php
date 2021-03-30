@@ -27,7 +27,7 @@ $row = $stmt->fetch();
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>おかいもの</title>
+  <title>更新</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -35,7 +35,7 @@ $row = $stmt->fetch();
 <form method="POST" action="admin_itemUpdate.php">
 <fieldset>
 <label>商品名：<input type="text" name="itemname" value="<?=$row["itemname"]?>"></label><br>
-<label>価格：<input type="text" name="itemcost" value="<?=$row["itemcost"]?>"></label><br>
+<label>単価（円）：<input type="text" name="itemcost" value="<?=$row["itemcost"]?>"></label><br>
 <label>説明：<input type="text" name="explanation" value="<?=$row["explanation"]?>"></label><br>
 <input type="hidden" name="id" value="<?=$row["id"]?>">
 <input type="submit" value="更新" class="button1">

@@ -48,7 +48,7 @@ if ($status==false) {
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>一発ギャグ購入処</title>
+  <title>◆OKAIMONO◆</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -60,7 +60,7 @@ if ($status==false) {
 <tr class="item">
 <th>商品コード</th>
 <th>商品名</th>
-<th>価格</th>
+<th>単価（円）</th>
 <th>数量</th>
 <th class="order">注文しちゃう？</th>
 </tr>
@@ -70,7 +70,7 @@ if ($status==false) {
 <th><input type="hidden" name="itemname" value="<?=$itemname?>"> <?=$itemname?> </th>
 <th><input type="hidden" name="itemcost" value="<?=$itemcost?>"> <?=$itemcost?> </th>
 <th><input type="hidden" name="quantity"value="<?=$quantity?>"> <?=$quantity?></th>
-<th><input type="submit" value="しちゃう"　class="button"></th>
+<th><input type="submit" value="しちゃう" class="button"></th>
 </tr>
 </form>
 <?php

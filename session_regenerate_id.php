@@ -6,9 +6,4 @@ $old_sessionid=session_id();
 session_regenerate_id();
 
 $new_sessionid=session_id(true);
-
-
-
-
-
 ?>
