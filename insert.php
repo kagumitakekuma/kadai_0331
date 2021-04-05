@@ -62,6 +62,7 @@ if ($status==false) {
 <th>商品名</th>
 <th>単価（円）</th>
 <th>数量</th>
+<th>合計金額</th>
 <th class="order">注文しちゃう？</th>
 </tr>
 <form method="POST" action="cart.php" class="form">
@@ -70,6 +71,7 @@ if ($status==false) {
 <th><input type="hidden" name="itemname" value="<?=$itemname?>"> <?=$itemname?> </th>
 <th><input type="hidden" name="itemcost" value="<?=$itemcost?>"> <?=$itemcost?> </th>
 <th><input type="hidden" name="quantity"value="<?=$quantity?>"> <?=$quantity?></th>
+<th><input type="hidden" name="quantity"value="<?=$itemcost*$quantity?>"> <?=$itemcost*$quantity?></th>
 <th><input type="submit" value="しちゃう" class="button"></th>
 </tr>
 </form>

@@ -10,7 +10,7 @@
 <header class="header">◆OKAIMONO◆
 <a class="logout" href="logout.php">ログアウト</a>
 </header>
-<h1>ジンクス取引所</h1>
+<h1>よろづや</h1>
    <a href="index.php">トップへ戻る</a>
    <a href="login.php">ログイン画面へ戻る</a>
 <h2>では、配送先を以下よりご入力ください。</h2>
